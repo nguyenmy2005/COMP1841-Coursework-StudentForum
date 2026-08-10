@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@500;600;700&family=IBM+Plex+Mono:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background: #F1F0EC;
+    color: #0F172A;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #0F172A;
+    margin: 0 0 0.6em;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 26px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #0F172A;
+    margin-bottom: 24px;
+}
+
+a {
+    color: #EA580C;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-header {
+    background: #FDE4CC;
+    padding: 20px 32px;
+    border-bottom: 3px solid #0F172A;
+}
+
+.site-header .brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #0F172A;
+    margin-bottom: 12px;
+}
+
+.site-header nav a {
+    color: #0F172A;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 24px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+}
+
+.site-header nav a:hover {
+    color: #EA580C;
+}
+
+.site-header nav a.active {
+    border-bottom: 3px solid #0F172A;
+}
+
+.site-header .nav-user {
+    color: #52463A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+}
+
+.stat-strip {
+    display: flex;
+    background: #FFFFFF;
+    border: 3px solid #0F172A;
+    margin-bottom: 36px;
+}
+
+.stat-block {
+    flex: 1;
+    padding: 20px 24px;
+    border-right: 3px solid #0F172A;
+}
+
+.stat-block:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #EA580C;
+}
+
+.stat-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section-title {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.feed-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.feed-card {
+    background: #FFFFFF;
+    border: 3px solid #0F172A;
+    overflow: hidden;
+    display: flex;
+}
+
+.feed-image {
+    width: 260px;
+    min-width: 260px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-right: 3px solid #0F172A;
+}
+
+.feed-body {
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.feed-body h3 {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    font-size: 26px;
+    color: #EA580C;
+    border-bottom: 3px solid #0F172A;
+}
+
+.feed-body p {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0;
+}
+
+.module-tag {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    background: #EA580C;
+    color: #FFFFFF;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.form-card {
+    background: #FFFFFF;
+    border: 3px solid #0F172A;
+    padding: 36px;
+    margin-bottom: 30px;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="password"],
+.form-card input[type="file"],
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 2px solid #94A3B8;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background: #F8FAFC;
+    color: #0F172A;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    outline: none;
+    border-color: #EA580C;
+    background: #FFFFFF;
+}
+
+.form-card textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    background: #EA580C;
+    color: #FFFFFF;
+    border: 3px solid #0F172A;
+    padding: 11px 24px;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #C2410C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    margin-bottom: 30px;
+    border: 3px solid #0F172A;
+}
+
+th, td {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #E2E8F0;
+    color: #0F172A;
+}
+
+th {
+    background: #0F172A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+td img {
+    border-radius: 4px;
+}
+
+.action-link {
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 6px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #EA580C;
+    border: 3px solid #0F172A;
+    text-decoration: none;
+}
+
+.action-link:hover {
+    background: #C2410C;
+}
+
+.action-link.delete {
+    color: #FFFFFF;
+    background: #DC2626;
+}
+
+.action-link.delete:hover {
+    background: #B91C1C;
+}
+
+#splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FDE4CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: fadeOutSplash 0.5s ease-in 2s forwards;
+}
+
+#splashScreen h2 {
+    color: #0F172A;
+    margin: 20px 0 0;
+    font-size: 24px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(15,23,42,0.15);
+    border-top: 5px solid #0F172A;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeOutSplash {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
